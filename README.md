@@ -11,203 +11,134 @@ A sample output can be found below.  Additionally, a simple graph of SSH attempt
 
 ### Sample Output
 
-In the subdirectory 'outs/' are stored files for each of the top 30 source IPs with times of attacks - for further analysis
+In the subdirectory 'outs/' are stored files for each of the top 30 source IPs with times of attacks - for further analysis.
 
 ```
-SSH attempts:29636
+SSH attempts:3724
 most common source addresses:
-5.188.86.172 5201
-5.188.62.11 3743
-5.182.39.96 3086
-5.188.86.174 2945
-88.214.26.88 2940
-88.214.26.89 2684
-88.214.26.93 991
-88.214.26.90 853
-5.182.39.62 374
-222.80.82.243 292
-193.112.138.85 279
-103.45.115.160 272
-5.182.39.64 264
-5.182.39.63 258
-193.29.13.54 257
-5.182.39.97 248
-5.182.39.61 200
-163.172.223.107 181
-141.98.81.150 122
-141.98.81.138 117
-27.78.14.83 24
-116.105.216.179 24
-157.230.123.253 22
-41.234.66.22 19
-92.63.194.104 15
-92.63.194.105 15
-92.63.194.106 15
-92.63.194.107 15
-92.63.194.108 15
-85.71.8.200 10
+('5.188.86.172', 800)
+('5.188.62.11', 562)
+('88.214.26.88', 483)
+('5.182.39.96', 376)
+('5.188.86.174', 351)
+('88.214.26.89', 311)
+('88.214.26.90', 125)
+('88.214.26.93', 99)
+('5.182.39.62', 48)
+('5.182.39.97', 37)
+('193.29.13.54', 37)
+('5.182.39.64', 33)
+('5.182.39.63', 30)
+('141.98.81.138', 20)
+('141.98.81.150', 14)
+('5.182.39.61', 3)
+('157.245.104.96', 3)
+('194.152.12.121', 2)
+('92.63.194.11', 2)
+('92.63.194.104', 2)
+('92.63.194.105', 2)
+('92.63.194.106', 2)
+('92.63.194.107', 2)
+('92.63.194.108', 2)
+('122.51.154.172', 2)
+('222.165.186.51', 2)
+('51.75.208.177', 2)
+('106.13.105.88', 2)
+('111.59.93.76', 2)
+('51.89.149.213', 1)
 most common username attempts:
-root 25299
-nproc 463
-admin 90
-oracle 50
-test 48
-postgres 47
-ubuntu 45
-hadoop 39
-user 33
-git 29
-pi 25
-jenkins 23
-ftpuser 17
-nginx 14
-nagios 13
-testuser 13
-mysql 12
-butter 12
-centos 12
-teamspeak3 11
-debian 11
-wildfly 10
-nologin 9
-minecraft 9
-splunk 9
-miner 9
-library 9
-teamspeak 8
-zabbix 8
-tomcat 7
+('root', 3343)
+('admin', 11)
+('user', 6)
+('mail', 4)
+('test', 3)
+('www', 3)
+('pi', 2)
+('marius', 2)
+('dw', 2)
+('tr', 2)
+('md', 2)
+('test01', 2)
+('web', 2)
+('zhujing', 2)
+('vyvyan', 1)
+('phil', 1)
+('speedy', 1)
+('teamspeak3-server', 1)
+('teamcity', 1)
+('daidamai', 1)
+('opfor', 1)
+('willy', 1)
+('yasmine', 1)
+('christyn', 1)
+('va', 1)
+('fujiki', 1)
+('zym', 1)
+('zhucm', 1)
+('sshvpn', 1)
+('cheryl', 1)
 most common password attempts:
-1234 24337
-nproc 463
-123456 161
-password 94
-12345 52
-123 49
-password123 44
-admin 36
-1 25
-user 25
-@Dasdd21dDWd1dwaDq 25
-qwerty 24
-1234567 23
-12345678 22
-123456789 21
-P@ssw0rd 20
- 19
-123456\r 15
-12 15
-1234567890 15
-raspberryraspberry993311 12
-raspberry 12
-111111 12
-root 10
-muiefazan123456 9
-test123 9
-akduy@akduy47 9
-test 8
-abc123 7
-ubuntu 7
+('1234', 3331)
+('123456', 22)
+('password', 12)
+('password123', 8)
+('123', 8)
+('12345', 5)
+('admin', 4)
+('qwerty', 4)
+('12345678', 3)
+('1234567', 3)
+('marius123', 2)
+('', 2)
+('user', 2)
+('pwlaHrn048Gs', 2)
+('test', 2)
+('zhujing', 2)
+('----', 2)
+('12345678910', 2)
+('0', 2)
+('1', 2)
+('vyvyan', 1)
+('P@ssw0rd1!', 1)
+('phil123', 1)
+('speedy', 1)
+('teamspeak3-server', 1)
+('daidamai', 1)
+('opfor', 1)
+('raspberry', 1)
+('raspberryraspberry993311', 1)
+('yasmine', 1)
 most common username/password combos:
-root:1234 24299
-nproc:nproc 463
-user:user 24
-admin:admin 23
-admin:password 21
-admin: 16
-pi:raspberryraspberry993311 12
-pi:raspberry 12
-root:admin 12
-root:password 11
-root:123456 7
-ubuntu:ubuntu 7
-root:root 7
-nologin:muiefazan123456 6
-root:akduy@akduy47 6
-tomcat:tomcat 5
-root:!@ 5
-git:git 5
-postgres:postgres 5
-weblogic:weblogic 5
-postgres:12 5
-postgres:1234 5
-ftpuser:ftpuser 5
-oracle:oracle 4
-mysql:mysql 4
-oracle:123456 4
-zabbix:zabbix 4
-root:P@ssw0rd 4
-root:root123 4
-root:12345 4
-unique source IPs:
-1537
-unique countries for source IPs:
-85
-most common countries for source IPs:
-China 507
-United States 167
-France 129
-Russia 54
-India 53
-Germany 50
-Brazil 46
-Canada 42
-South Korea 41
-Singapore 33
-Vietnam 30
-United Kingdom 30
-Indonesia 29
-Netherlands 27
-Italy 23
-Taiwan 21
-Argentina 17
-Colombia 16
-Japan 15
-Hong Kong 14
-Spain 11
-Thailand 11
-Poland 9
-Hungary 9
-Romania 7
-Mexico 7
-Australia 7
-Ukraine 7
-Pakistan 6
-South Africa 6
-unique countries for overall attacks:
-85
-most common countries for overall attacks:
-Russia 8312
-Ireland 8148
-Germany 7554
-China 1541
-Romania 263
-United States 248
-Panama 241
-Netherlands 217
-France 192
-India 91
-Vietnam 83
-Brazil 66
-South Korea 59
-Canada 59
-Singapore 47
-United Kingdom 45
-Indonesia 37
-Taiwan 31
-Italy 31
-Japan 28
-Czechia 25
-Argentina 22
-Colombia 22
-Egypt 21
-Hong Kong 21
-Spain 17
-Poland 17
-Thailand 17
-Hungary 14
-Pakistan 10
-
+('root:1234', 3331)
+('admin:password', 3)
+('marius:marius123', 2)
+('root:admin', 2)
+('admin:admin', 2)
+('admin:', 2)
+('user:user', 2)
+('root:pwlaHrn048Gs', 2)
+('zhujing:zhujing', 2)
+('root:----', 2)
+('root:12345678910', 2)
+('root:0', 2)
+('vyvyan:vyvyan', 1)
+('test:P@ssw0rd1!', 1)
+('phil:phil123', 1)
+('speedy:speedy', 1)
+('teamspeak3-server:teamspeak3-server', 1)
+('teamcity:123456', 1)
+('daidamai:daidamai', 1)
+('opfor:opfor', 1)
+('willy:123456', 1)
+('pi:raspberry', 1)
+('pi:raspberryraspberry993311', 1)
+('yasmine:yasmine', 1)
+('christyn:christyn', 1)
+('va:password', 1)
+('fujiki:fujiki', 1)
+('mail:p4ssw0rd', 1)
+('zym:123456', 1)
+('zhucm:123456', 1)
 ```
 
 
