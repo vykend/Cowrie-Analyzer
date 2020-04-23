@@ -19,8 +19,8 @@ def bin_by_hours(given_time, bin_amt):
 # top 30 username attempts
 # top 30 password attempts
 # top 30 username:password combo attempts
-# top 30 countries by total number of source IPs
-# top 30 countries by total number of attacks
+# all countries sorted by total number of source IPs
+# all countries sorted by total number of attacks
 # in directory 'outs' are saved times for top 30 source IPs for further (time-based) analysis
 class CowrieAnalyzer:
     def __init__(self, json_dir='cowrie'):
@@ -108,12 +108,12 @@ class CowrieAnalyzer:
         print('unique countries for source IPs:')
         print(len(self.geoip_lookup))
         print('most common countries for source IPs:')
-        for country in sorted(self.geoip_lookup.items(), key=operator.itemgetter(1), reverse=True)[:30]:
+        for country in sorted(self.geoip_lookup.items(), key=operator.itemgetter(1), reverse=True):
             print(country)
         print('unique countries for overall attacks:')
         print(len(geoip_overall))
         print('most common countries for overall attacks:')
-        for country in sorted(geoip_overall.items(), key=operator.itemgetter(1), reverse=True)[:30]:
+        for country in sorted(geoip_overall.items(), key=operator.itemgetter(1), reverse=True):
             print(country)
 
 
